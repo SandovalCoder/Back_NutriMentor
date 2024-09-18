@@ -25,4 +25,5 @@ public class Compra {
     @ManyToOne
     @JoinColumn(name="Cliente_id")
     private Cliente cliente;
+
 }

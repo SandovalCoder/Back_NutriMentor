@@ -30,4 +30,5 @@ public class Detalle_Compra {
     @ManyToOne
     @JoinColumn(name="Compra_nroOrden")
     private Compra compra;
+
 }
