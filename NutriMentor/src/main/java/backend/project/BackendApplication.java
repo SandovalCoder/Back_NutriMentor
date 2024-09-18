@@ -22,7 +22,6 @@ public class BackendApplication {
 		return args -> {
 
 
-
 		};
 	}
 
