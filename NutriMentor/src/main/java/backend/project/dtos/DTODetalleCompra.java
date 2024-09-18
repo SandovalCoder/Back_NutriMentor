@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 @NoArgsConstructor
-public class DTODetalle_Compra {
+public class DTODetalleCompra {
     private Long id;
     private Long cantidad;
     private Long subtotal;
