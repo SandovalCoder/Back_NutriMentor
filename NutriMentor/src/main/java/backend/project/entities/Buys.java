@@ -16,7 +16,6 @@ import java.util.List;
 @NoArgsConstructor
 @Table(name = "app_buys")
 public class Buys {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long  orderNumber;

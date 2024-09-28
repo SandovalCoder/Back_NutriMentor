@@ -12,7 +12,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Table(name = "app_recommendation")
 public class Recommendation {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long  id;
