@@ -6,25 +6,22 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
-
 @Entity
 @AllArgsConstructor
-@NoArgsConstructor
 @Data
-@Table(name = "app_authority")
-public class Authority {
+@NoArgsConstructor
+@Table(name = "app_recommendation")
+public class Recommendation {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long  id;
 
-    @Column(name = "name", nullable = false, unique = true)
-    private String name;
+    @Column(name = "description", nullable = false, length = 200)
+    private String description;
 
     @JsonIgnore
-    @ManyToMany(mappedBy = "authorities")
-    private List<User> users;
+    @ManyToOne
+    @JoinColumn(name = "healthGoal_id", nullable = false)
+    private HealthGoal healthGoal;
 }
-
