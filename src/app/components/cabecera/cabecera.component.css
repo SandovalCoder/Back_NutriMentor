@@ -1,0 +1,60 @@
+/* Estilos generales para la barra de herramientas */
+mat-toolbar {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  font-family: Arial, sans-serif;
+  background-color: #269506; /* Color de fondo verde */
+  color: white;
+  transition: background-color 0.3s ease; /* Animación de transición */
+}
+
+/* Estilo para los botones dentro de la barra de herramientas */
+mat-toolbar button {
+  color: white;
+  transition: color 0.3s ease; /* Transición de color */
+}
+
+/* Diseño del logo */
+.app-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+/* Título de la aplicación */
+.app-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* Espaciador para alinear los elementos */
+.spacer {
+  flex: 1 1 auto;
+}
+
+/* Ajustes para pantallas más pequeñas (responsividad) */
+@media (max-width: 600px) {
+  mat-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  mat-toolbar button {
+    font-size: 1rem;
+    padding: 8px;
+  }
+
+  .spacer {
+    display: none; /* El espaciador se oculta en pantallas pequeñas */
+  }
+
+  .app-logo {
+    width: 30px;
+    height: 30px;
+  }
+}

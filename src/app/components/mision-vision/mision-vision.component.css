@@ -1,0 +1,32 @@
+.mision-vision-full-width {
+    background-color:#D3D3D3; 
+    /* Gris medio-oscuro de fondo  background-color*/
+    padding: 40px 0; /* Espaciado arriba y abajo */
+    width: 100%; /* Ocupa todo el ancho */
+}
+
+.mision-vision-section {
+    max-width: 1200px; /* Ancho máximo del contenido centrado */
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.mision-vision-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4CAF50; /* Verde Oscuro */
+    margin-bottom: 20px;
+}
+
+.mision-vision-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #000000; /* Texto en Negro */
+    margin-bottom: 20px;
+    text-align: justify; /* Justificar el texto */
+}
+
+.mision-vision-section p strong {
+    color: #30B81A; /* Verde Oscuro */
+}

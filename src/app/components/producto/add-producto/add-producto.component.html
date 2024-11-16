@@ -1,0 +1,42 @@
+<div>
+  <h2 *ngIf="productoId === 0">Agregar Producto</h2>
+  <h2 *ngIf="productoId > 0">Editar Producto</h2>
+</div>
+<br>
+<form [formGroup]="addEditProducto">
+  <mat-form-field>
+    <mat-label>Id</mat-label>
+    <input matInput formControlName="id" readonly="true">
+  </mat-form-field>
+  <br><br>
+  <mat-form-field>
+    <mat-label>Nombre</mat-label>
+    <input matInput formControlName="name">
+  </mat-form-field>
+  <br><br>
+
+  <mat-form-field>
+    <mat-label>Categoría</mat-label>
+    <mat-select formControlName="categoryId">
+      <mat-option *ngFor="let category of categories" [value]="category.id">
+        {{ category.type }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br><br>
+
+  <mat-form-field>
+    <mat-label>Precio</mat-label>
+    <input matInput formControlName="price" type="number">
+  </mat-form-field>
+  <br><br>
+
+  <mat-form-field>
+    <mat-label>Stock</mat-label>
+    <input matInput formControlName="stock" type="number">
+  </mat-form-field>
+  <br><br>
+
+  <button mat-stroked-button routerLink="/productos">Cancelar</button>
+  <button mat-raised-button (click)="grabarProducto()">Grabar</button>
+</form>
