@@ -10,6 +10,6 @@ import lombok.NoArgsConstructor;
 public class DTORecommendation {
     private Long id;
     private String description;
-
+    private String author;
     private Long healthGoalId;
 }
