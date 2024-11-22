@@ -12,4 +12,8 @@ public class DTORecommendation {
     private String description;
     private String author;
     private Long healthGoalId;
+    private Long ca;
+    private String as;
+    private String scs;
+    private Long cscsc;
 }
