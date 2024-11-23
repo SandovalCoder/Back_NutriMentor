@@ -20,7 +20,7 @@ export class BuyDetailService {
   getBuyDetailReport(){
     return this.http.get<BuyDetailReport[]>(this.ruta_servidor + "/" + this.recurso+"/"+"report");
   }
-
+  
   getBuyDetail(id:number){
     return this.http.get<BuyDetail>(this.ruta_servidor + "/" + this.recurso+"/"+id.toString());
   }

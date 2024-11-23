@@ -45,7 +45,16 @@ import { ListObjetivosaludComponent } from './components/objetivosalud/list-obje
 import { AddObjetivosaludComponent } from './components/objetivosalud/add-objetivosalud/add-objetivosalud.component';
 import { ListPreguntasComponent } from './components/preguntas/list-preguntas/list-preguntas.component';
 import { AddPreguntasComponent } from './components/preguntas/add-preguntas/add-preguntas.component';
-
+import { ShopProductsComponent } from './components/producto/shop-products/shop-products.component';
+import { ComentproductComponent } from './components/resena/comentproduct/comentproduct.component';
+import { CartProductoComponent } from './components/producto/cart-producto/cart-producto.component';
+import { ClientQuestionComponent } from './components/preguntas/client-question/client-question.component';
+import { ProfessionalQuestionComponent } from './components/preguntas/professional-question/professional-question.component';
+import { AddClientesComponent } from './components/clientes/add-clientes/add-clientes.component';
+import { PerfilComponent } from './components/clientes/perfil/perfil.component';
+import { AdminAddDetallecompraComponent } from './components/detallecompra/admin-add-detallecompra/admin-add-detallecompra.component';
+import { PerfilprofesionalComponent } from './components/clientes/perfilprofesional/perfilprofesional.component';
+import { UsersrecomenComponent } from './components/recomendacion/usersrecomen/usersrecomen.component';
 
 
 
@@ -84,7 +93,17 @@ import { AddPreguntasComponent } from './components/preguntas/add-preguntas/add-
     ListObjetivosaludComponent,
     AddObjetivosaludComponent,
     ListPreguntasComponent,
-    AddPreguntasComponent
+    AddPreguntasComponent,
+    ShopProductsComponent,
+    ComentproductComponent,
+    CartProductoComponent,
+    ClientQuestionComponent,
+    ProfessionalQuestionComponent,
+    AddClientesComponent,
+    PerfilComponent,
+    AdminAddDetallecompraComponent,
+    PerfilprofesionalComponent,
+    UsersrecomenComponent
     
   ],
   imports: [

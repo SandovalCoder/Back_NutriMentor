@@ -3,8 +3,9 @@ export interface QuestionReport {
     query: string;
     response: string;
     queryDate: Date;
-    responseDate: Date;
+    responseDate: Date | null;
     clientName: string;
+    clientId: number;
     healthProfessionalName: string;
-    
+    state: string;
 }

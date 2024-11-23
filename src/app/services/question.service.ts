@@ -16,7 +16,10 @@ export class QuestionService {
   getQuestions(){
     return this.http.get<Question[]>(this.ruta_servidor + "/" + this.recurso);
   }
-
+  getPendingQuestionsByProfessional(healthProfessionalId: number) {
+    return this.http.get<QuestionReport[]>(`${this.ruta_servidor}/${this.recurso}/professional/${healthProfessionalId}/pending`);
+  }
+  
   getQuestionReport(){
     return this.http.get<QuestionReport[]>(this.ruta_servidor + "/" + this.recurso+"/"+"report");
   }

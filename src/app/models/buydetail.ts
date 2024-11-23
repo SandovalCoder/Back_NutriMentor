@@ -1,7 +1,7 @@
 export interface BuyDetail {
     id: number;
     quantity: number;
-    subtotal: number;
+    total: number;
     productId: number;
     buysId: number; 
 }

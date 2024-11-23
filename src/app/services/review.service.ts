@@ -21,6 +21,11 @@ export class ReviewService {
     return this.http.get<ReviewReport[]>(this.ruta_servidor + "/" + this.recurso+"/"+"report");
   }
 
+  getReviewReportByProduct(productId: number) {
+    return this.http.get<ReviewReport[]>(`${this.ruta_servidor}/${this.recurso}/product-report?productId=${productId}`);
+  }
+  
+  
   getReview(id:number){
     return this.http.get<Review>(this.ruta_servidor + "/" + this.recurso+"/"+id.toString());
   }

@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { User } from '../models/user';
 import { Token } from '../models/token';
 import { tap } from 'rxjs';
+import { HealthProfessional } from '../models/healthprofessional';
 
 @Injectable({
   providedIn: 'root'
@@ -58,5 +59,9 @@ export class UserService {
     return null;    
   }
 
+  getHealthProfessionalByUserId(userId: number) {
+    return this.http.get<HealthProfessional>(`${this.ruta_servidor}/users/${userId}/health-professional`);
+  }
+  
 
 }

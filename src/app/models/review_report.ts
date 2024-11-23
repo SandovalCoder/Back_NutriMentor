@@ -4,4 +4,5 @@ export interface ReviewReport {
     comment: string;
     productName: string;
     clientName: string;
+    clientId: number;
 }

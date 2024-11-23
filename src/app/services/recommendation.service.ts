@@ -21,6 +21,11 @@ export class RecommendationService {
     return this.http.get<RecommendationReport[]>(this.ruta_servidor + "/" + this.recurso+"/"+"report");
   }
 
+  getRecommendationsByUserId(userId: number) {
+    return this.http.get<RecommendationReport[]>(`${this.ruta_servidor}/recommendations/user/${userId}`);
+  }
+  
+
   getRecommendation(id:number){
     return this.http.get<Recommendation>(this.ruta_servidor + "/" + this.recurso+"/"+id.toString());
   }
